@@ -19,7 +19,6 @@ def sendPostRequst(path, *param):
     return result
 
 def getAllPipeLine(slug):
-    # path = 'project/github/undodel/test_ci/pipeline'
     path = 'project/github/{}/pipeline'.format(slug)
     reqResult = sendGetRequst(path)
     if reqResult.status_code == 200:
