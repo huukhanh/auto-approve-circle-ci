@@ -1,4 +1,4 @@
-# auto-approval-circle-ci
+# auto-approve-circle-ci
 
 ### This script will auto approve "on-hold" job on cirleci by api token.
 1. Come to https://app.circleci.com/settings/user/tokens and create api token
