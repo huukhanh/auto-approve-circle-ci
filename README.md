@@ -6,3 +6,8 @@
 3. Add project slug to variable ```slugs```(line 5)
 4. Install dependences(requests: ```pip3 install requests```)
 5. Run script by: ```python3 main.py```
+
+### License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+More Documentation coming soon...
