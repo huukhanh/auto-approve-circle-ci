@@ -1,1 +1,22 @@
+name: Check Circle CI
 
+on:
+  schedule:
+    - cron: "* * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Replace last check
+        run: |
+          sed -i '' '$s/.*/Checked circle CI at: '"$(date)"'/' test.md
+      - name: Commit
+        run: |
+          git config --global user.name 'Huu Khanh'
+          git config --global user.email 'butchicun1236@gmail.com'
+          git commit -am "Check Circle CI"
+          git push
+        env:
+          MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
