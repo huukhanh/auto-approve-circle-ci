@@ -10,5 +10,5 @@
 ### License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-More Documentation coming soon...
+
 Checked circle CI at: Tue Oct 17 07:40:01 UTC 2023
